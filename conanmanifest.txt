@@ -1,0 +1,6 @@
+1626850736
+conandata.yml: 64f443041f195a4d2ebacf49ee34e9b6
+conanfile.py: eb1a004abcf32a6aef97d9a75da30195
+export_source/CMakeLists.txt: fbe3218e86111e24cee1d0cfd7ce60dd
+export_source/patches/0001-mingw-improvements.patch: b3719f6d3b77232d8a058774cfa9193d
+export_source/patches/0002-sdl_string.patch: b2c7225af24074c3f34ba7ba298f91a6

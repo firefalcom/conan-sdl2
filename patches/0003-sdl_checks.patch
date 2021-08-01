@@ -1,0 +1,11 @@
+--- a/cmake/sdlchecks.cmake	2021-08-01 09:03:11.667543614 +0200
++++ b/cmake/sdlchecks.cmake	2021-08-01 09:03:02.350876941 +0200
+@@ -15,6 +15,8 @@
+       string(REGEX REPLACE "(\\.[0-9]*)\\.[0-9\\.]*$" "\\1" _LIB_REGEXD "${_LIB_JUSTNAME}")
+     endif()
+ 
++    string(REGEX REPLACE "[.]a$" ".so" _LIB_REGEXD ${_LIB_REGEXD})
++
+     SET(_DEBUG_FindSONAME FALSE)
+     if(_DEBUG_FindSONAME)
+       message_warn("DYNLIB OUTPUTVAR: ${_LIB} ... ${_LNAME}_LIB")
